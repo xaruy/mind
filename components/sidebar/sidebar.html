@@ -1,0 +1,6 @@
+<div class="mind-sidebar" ng-mouseenter="$ctrl.changeWidth('wide')" ng-mouseleave="$ctrl.changeWidth('narrow')">
+    <ul class="list-unstyled">
+        <li ng-click="$ctrl.onCreate()">新建脑图+</li>
+        <li ng-repeat="root in $ctrl.rootList" ng-bind="root.title" ng-class="{'active':$ctrl.activeIndex===$index}" ng-click="$ctrl.onChoose({rootid:root.id,index:$index})"></li>
+    </ul>
+</div>

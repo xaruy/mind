@@ -1,0 +1,76 @@
+.mind-canvas {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 70px;
+}
+
+.toolbar {
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 1px 5px #ddd;
+}
+
+.structure-mind {
+    border-bottom: 1px solid #ededed;
+    line-height: 50px;
+    width: 50%;
+    height: 50px;
+    float: left;
+}
+
+.structure-mind .describe {
+    margin-left: 160px;
+}
+
+.catalog {
+    width: 100%;
+    height: 50px;
+    float: left;
+    margin-top: -5px;
+    border-bottom: 1px solid #ededed;
+}
+
+.catalog .action {
+    float: right;
+    text-align: center;
+    line-height: 50px;
+    border-left: 1px solid #ededed;
+    color: #ccc;
+    padding: 0px 20px;
+}
+
+.catalog .active {
+    cursor: pointer;
+    color: #676973;
+}
+
+.mind-content {
+    position: absolute;
+    background: #fff;
+    min-width: 100px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+    left: 0;
+    top: 0;
+    padding: 3px 5px;
+    margin-top: -5px;
+    margin-left: -3px;
+    max-width: 300px;
+    width: auto;
+    font-size: 14px;
+    line-height: 1.4em;
+    min-height: 1.4em;
+    box-sizing: border-box;
+    overflow: hidden;
+    word-break: break-all;
+    word-wrap: break-word;
+    border: none;
+    opacity: 0;
+    z-index: -1000;
+}
+
+.input-active {
+    opacity: 1;
+    z-index: 999;
+}
